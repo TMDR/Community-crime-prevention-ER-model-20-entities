@@ -1,0 +1,5 @@
+select * from 
+singer
+join
+social_cultured_civilian
+on singer.full_name = social_cultured_civilian.full_name;

@@ -1,0 +1,44 @@
+insert into church values(1,'elias church','christian');
+insert into mayor values(1,'mayor thebest',3245677,CURDATE(),'NYC');
+insert into civilian values(1,'raman best',8823,1);
+insert into church_civilian values(1,1,1);
+insert into singer values(1,'Selena Gomez',178);
+insert into civilian_singer values(1,1,1);
+insert into small_basic_infrastructure values(1,'road','NYC');
+insert into community_infrastructure values(1,'the team',12);
+insert into com_infrastructure_small_basic_infrastructure values(1,1,1);
+ALTER TABLE school
+DROP FOREIGN KEY FK_school_specialist_school; 
+insert into school values(1,'ENOA','NYC',1);
+insert into crime_prevention_specialist values(1,'specialist',245,12,1);
+ALTER TABLE school
+ADD CONSTRAINT FK_school_specialist_school
+FOREIGN KEY (`crime_preventioon_specialist_id`) REFERENCES crime_prevention_specialist(`id`);
+insert into people_communitiy values(1,12);
+insert into local_government_agencies values(1,'agency','Mr. responsible',1);
+insert into local_government_function values('do something',1);
+insert into function_civilian_crime_prevent values(1,'do something',1);
+insert into grand_economic values(1,'Mr. roland',21356);
+insert into grand_economic_civilian_donation values(1,1,1);
+insert into mayor_civilian values(1,1,1);
+insert into movie values('the lion king',CURDATE());
+insert into movie_civilian values(1,'the lion king',1);
+insert into civilian values(2,'hey someone',1256,1);
+insert into neighborhood_watch values(1,1,1);
+insert into police values(911,777,100);
+insert into people_com_police values(1,911,1);
+insert into police_civilian values(1,1,911,CURDATE(),'NYC');
+insert into police_gov values(1,911,1);
+insert into relegious_organization values(1,'your organization',CURDATE());
+insert into relegious_organization_civilian_guide values(1,1,1);
+insert into school_civilian values(1,1,1);
+insert into small_basic_infrastructure_civilian_serve values(1,1,1);
+insert into social_cultured_civilian values(1,'Mr. cultured',2134);
+insert into social_cultured_civilian_civilian values(1,1,1);
+insert into social_media values(1,'your social media');
+insert into social_media_civilian values(1,1,1);
+insert into sport_club values(1,'lakers',12);
+insert into sport_club_civilian values(1,1,1);
+insert into writer values(1,'jojo moyes',5);
+insert into writer_civilian values(1,1,1);
+insert into social_cultured_civilian values(2,'Selena Gomez',1);

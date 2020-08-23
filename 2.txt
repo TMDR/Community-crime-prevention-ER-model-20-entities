@@ -1,0 +1,3 @@
+select * from singer
+union
+select * from social_cultured_civilian;
